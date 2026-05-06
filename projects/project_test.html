@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="./project_test.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <img src="../img/myself.png" alt="">
+        <div>Ciao, come va?</div>
+        <img src="../img/myself.png" alt="">
+    </div>
+</body>
+</html>
+
+<style>
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
+    ::selection{
+        background-color: rgb(255, 239, 66);
+    }
+
+    @font-face {
+        font-family: "Helvetica";
+        src: url("./font/Helvetica.ttf") format("ttf");
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    body{
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 100dvh;
+        height: fit-content;
+        width: 100dvw;
+        font-family: "Helvetica";
+        overflow: scroll;
+        background-color: rgb(77,175,88);
+        color: rgb(43, 45, 33);
+    }
+
+    .main{
+        margin-top: 1.5dvw;
+        min-height: calc(100dvh - 1.5dvw);
+        height: fit-content;
+        width: 97dvw;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5dvw;
+    }
+
+    div{
+        line-height: 0.8;
+        display: inline;
+        font-size: 5cqw;
+        background-color: bl;
+    }
+</style>
